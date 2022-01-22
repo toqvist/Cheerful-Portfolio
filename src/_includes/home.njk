@@ -6,13 +6,19 @@
         <h1>Hello!</h1>
         <h2>I'm Tobias</h2>
     </header>
-
-    {% for project in collections.projects %}
+    <section class="projects">
+        <h2>Here's some of my projects.</h2>
+        {% for project in collections.projects %}
 
         <div class="project-card">
             <a href="{{ project.url }}">{{ project.data.title }}</a>
             <img src="{{ project.data.img }}" alt="">
         </div>
 
-    {% endfor %}
+        {% endfor %}
+
+    </section>
+
+
+    
 {% endblock %}
