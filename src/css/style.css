@@ -1,0 +1,71 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+    list-style: none;
+    font-style: none;
+}
+
+:root {
+    --bee: #FFD55A;
+    --leaf: #a3c560;
+    --greenish: #53ac75;
+    --lake: #0c8c81;
+    --ocean: #176a77;
+    --navy:#2f4858;
+
+    --primary-color: var(--bee);
+    --secondary-color: var(--leaf);
+    --dark-primary-color: var(--navy);
+    --dark-secondary-color: var(--ocean);
+}
+
+
+.title, .subtitle, .navbar {    
+    font-family: "Happy monkey", sans-serif;
+}
+
+.body {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+a {
+   font-style: normal; 
+   color: black;
+}
+a:visited {
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: var(--primary-color);
+}
+
+.footerbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: var(--dark-primary-color);
+}
+
+
+.face-button {
+    transition: transform 300ms;
+    transition-timing-function: ease-out;
+}
+
+.face-button:hover {
+    transform:scale(1.1) ;
+    transition: transform 120ms;
+    transition-timing-function: ease;
+}
+
+.fa-arrow-down {
+    font-size: 150%;
+    transform:scale(1.5) ;
+}
+
