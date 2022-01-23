@@ -18,7 +18,6 @@
 
     --primary-color: var(--bee);
     --secondary-color: var(--leaf);
-    --background-color: var(--greenish);
     --dark-primary-color: var(--navy);
     --dark-secondary-color: var(--ocean);
 }
@@ -84,13 +83,25 @@ a:visited {
     align-items: center;
 }
 
-.footerbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5em;
-    background-color: var(--dark-primary-color);
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr min(105ch, 100%) 1fr;
 }
 
+.main-wrapper > * {
+    grid-column: 2;
+  }
+
+.page-content {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
+}
 
 #face {
     transition: transform 300ms;
@@ -124,39 +135,25 @@ a:visited {
 }
 
 .projects-wrapper {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    /* padding: 0px 20px;
-    max-width: 1000px; */
+   
 }
 
-.page-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
-}
-
-@media all and (max-width: 550px) {
-    
-    .projects {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1%;
-        
-    }   
-}
-
-@media all and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     
     .projects {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1%;
-        max-width: 730px;
-    }  
+    }   
 }
+
+
+@media screen and (max-width: 650px) {
+    
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
+
+
 
 .project-card {
     
@@ -167,11 +164,13 @@ a:visited {
     align-items: center;
     justify-content: center;
 
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 4%;
-    max-width: 300px;
+    border-style: transparent;
+    max-width: 350px;
 
     transition: transform 50ms;
+    background-color: white;
 }
 
 .project-card:hover {
@@ -193,9 +192,8 @@ a:visited {
 }
 
 
-
-.main-wrapper {
-    padding: 0% 10%;
+.footerbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
 }
-
-
