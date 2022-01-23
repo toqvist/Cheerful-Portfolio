@@ -83,6 +83,28 @@ a:visited {
     align-items: center;
 }
 
+#face {
+    transition: transform 300ms;
+    transition-timing-function: ease-out;
+    flex: 1 auto;
+    max-width: 40%;
+}
+
+#face:hover {
+    transform:scale(1.1);
+    transition: transform 120ms;
+    transition-timing-function: ease;    
+}
+
+.hero {
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.fa-arrow-down {
+    font-size: 150%;
+    transform:scale(1.5) ;
+}
 
 .main-wrapper {
     display: grid;
@@ -94,44 +116,21 @@ a:visited {
   }
 
 .page-content {
-
     display: flex;
-    align-items: center;
     flex-direction: column;
+
     border-radius: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
 }
 
-#face {
-    transition: transform 300ms;
-    transition-timing-function: ease-out;
-    flex: 1 auto;
-    max-width: 40%;
-}
 
-
-#face:hover {
-    transform:scale(1.1);
-    transition: transform 120ms;
-    transition-timing-function: ease;    
-}
-
-
-.fa-arrow-down {
-    font-size: 150%;
-    transform:scale(1.5) ;
-}
 
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
     padding: 1 auto;
-}
-.hero {
-    background-color: var(--primary-color);
-    margin-bottom: 20px;
 }
 
 .projects-wrapper {
@@ -153,7 +152,10 @@ a:visited {
     }   
 }
 
-
+.card {
+    display: flex;
+    justify-content: center;
+}
 
 .project-card {
     
@@ -165,9 +167,9 @@ a:visited {
     justify-content: center;
 
     /* padding: 10px; */
-    border-radius: 4%;
+    border-radius: 5%;
     border-style: transparent;
-    max-width: 350px;
+    max-width: 300px;
 
     transition: transform 50ms;
     background-color: white;

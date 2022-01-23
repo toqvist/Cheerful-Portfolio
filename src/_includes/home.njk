@@ -19,7 +19,7 @@
             
                     {% for project in collections.projects %}
             
-                    <a href="{{ project.url }}">
+                    <a href="{{ project.url }}" class="card">
                         <div class="project-card">
                             <h3 class="card-title">{{ project.data.title }}</h3>
                             <img width="300px" height="200px" src="{{ project.data.img }}" alt="">  
