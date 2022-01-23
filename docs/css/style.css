@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0px;
     margin: 0px;
     border: none;
@@ -18,17 +18,21 @@
 
     --primary-color: var(--bee);
     --secondary-color: var(--leaf);
+    --background-color: var(--greenish);
     --dark-primary-color: var(--navy);
     --dark-secondary-color: var(--ocean);
 }
 
+body {
+    background-color: var(--primary-color);
+}
 
 .title, .subtitle, .navbar  {    
     font-family: "Happy monkey", sans-serif;
     font-size: 140%;
 }
 
-.p ,h1, h2, h3, h4, h5, h6{
+p ,h1, h2, h3, h4, h5, h6{
     font-family: 'Proza Libre', sans-serif;
 }
 
@@ -42,8 +46,6 @@ a:visited {
 }
 
 .navbar {
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     /* padding: 0px 1.5em 0px; */
@@ -78,8 +80,6 @@ a:visited {
     align-items: center;
 }
 
-
-
 .footerbar {
     display: flex;
     justify-content: space-between;
@@ -106,5 +106,80 @@ a:visited {
 .fa-arrow-down {
     font-size: 150%;
     transform:scale(1.5) ;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 1 auto;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* padding: 0px 20px;
+    max-width: 1000px; */
+}
+
+@media all and (max-width: 550px) {
+    
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1%;
+        
+    }   
+}
+
+@media all and (max-width: 750px) {
+    
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+        max-width: 730px;
+    }  
+}
+
+.project-card {
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 4%;
+    max-width: 300px;
+}
+
+.card-title {
+    margin: 5%;
+    font-size: 180%;
+    
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 180%;
+    background-color: white;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.main-wrapper {
+    padding: 0% 10%;
+}
+
+.page-content {
+    /* padding: 0% 0%; */
+    border-radius: 50px;
+    background-color: white;
 }
 
