@@ -10,6 +10,7 @@
     <div class="main-wrapper">
         <main class="page-content">
             
+            {# Move header into section #}
             <h2 class="projects-header">Here's some of my projects.</h2>
             <section class="projects-wrapper">
             
@@ -20,8 +21,9 @@
                     <a href="{{ project.url }}">
                         <div class="project-card">
                             <h3 class="card-title">{{ project.data.title }}</h3>
-                            <img width="200px" src="{{ project.data.img }}" alt="">
+                            <img width="200px" src="{{ project.data.img }}" alt="">  
                         </div>
+                        
                     </a>
                     {% endfor %}
                 </div>
