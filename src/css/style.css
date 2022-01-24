@@ -76,12 +76,12 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar .container {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
-    max-width: 1500px;
 }
 
 .left, .center, .right {
