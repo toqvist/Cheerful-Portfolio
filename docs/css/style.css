@@ -304,3 +304,9 @@ h1 > strong::after {
 .about > * {
     grid-column: 2;
 }
+
+.project-banner {
+    margin-top: 15px;
+    margin-bottom: -5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

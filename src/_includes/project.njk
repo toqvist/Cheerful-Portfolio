@@ -1,6 +1,17 @@
 {% extends "base.njk" %}
 
-{% block pagecontent %}
+{% block headercontent %}
+    <div class="about-header">
+        <h1 class="title">{{ title }}</h1> 
+        <div class="project-banner"><img src="{{ banner }}" alt=""></div>
+    </div>
+{% endblock %}
 
+
+{% block pagecontent %}
+    <section class="about">
+        <h1 class="title">{{ title }}</h1> 
+        {{ content | safe}}
+    </section>
 
 {% endblock %}
