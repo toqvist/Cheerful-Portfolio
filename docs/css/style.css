@@ -353,8 +353,23 @@ h1 > strong::after {
 
 .contact-form {
     grid-column: 2;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px;
+    
+    max-width: 400px;
+    
+    text-align: center;
+    padding: 40px;
+
+}
+
+.contact-form div{
+    margin: 15px;
+}
+
+.input-text {
+    border-style:dotted;
+    border-radius: 5px;
 }
