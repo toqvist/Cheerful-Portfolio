@@ -5,7 +5,6 @@ face.addEventListener("mouseover", buttonHover)
 face.addEventListener("mouseout", buttonExit)
 
 function buttonHover (event) {
-    console.log("hovering")
     face.src = "/img/happy.svg"
     
 }
