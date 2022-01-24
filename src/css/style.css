@@ -15,6 +15,8 @@
     --lake: #0c8c81;
     --ocean: #176a77;
     --navy:#2f4858;
+    --mustard: #fde18d;
+    
 
     --primary-color: var(--bee);
     --secondary-color: var(--leaf);
@@ -107,12 +109,12 @@ a:visited {
 .hero {
     padding: 3%;
     
-    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     line-height: 1.8;
+    font-size: 120%;
 }
 
 .fa-arrow-down§ {
@@ -140,7 +142,8 @@ a:visited {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
 
     padding-top: 5%;
-    
+    padding-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 /* .projects {
@@ -219,12 +222,56 @@ a:visited {
 }
 
 .footerbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    /* background-color: var(--mustard); */
+    margin-top: 7%;
+    padding: 5%;
 }
 
-hr.divider {
+.footer-grid {
+    /* padding: 5%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 1em;
+
+    
+}
+
+.divider.gray {
     border-top: 3px solid rgb(226, 226, 226);
     border-radius: 5px;
     margin: 0% 3%;
+}
+
+.divider.primary-color {
+    /* border-top: 5px solid var(--dark-primary-color);  */
+    border-top: 7px solid var(--mustard);
+    border-radius: 5px;
+    margin: 0% 1%;
+}
+
+.greeting {
+    font-size: 2em;
+    
+    
+}
+
+/* Underline */
+strong {
+    position: relative;
+}
+strong::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url("/img/underline-charcoal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Underline height, width */
+h1 > strong::after {
+    bottom: -0.2rem;
+    height: 0.95rem;
+    left: -0.25rem;
+    right: -0.25rem;
 }
