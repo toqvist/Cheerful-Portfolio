@@ -13,20 +13,18 @@
     <script src="/js/script.js" defer></script>
 </head>
 <body>
+    
     {% include "_partials/navbar.njk" %}
     
     {% block headercontent %}{% endblock %}
     
     <div class="main-wrapper">
-        
+    
         <main class="page-content">
     
             {% block pagecontent %}{% endblock %}
-
         </main>
-
     </div>
-   
     
     {% include "_partials/footer.njk" %}
 

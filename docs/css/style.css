@@ -7,7 +7,6 @@
     font-style: none;
 }
 
-
 :root {
     --bee: #FFD55A;
     --leaf: #a3c560;
@@ -25,12 +24,18 @@
     font-family: 'Proza Libre', sans-serif;
 }
 
-body {
+html, body { 
     height: 100%;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
 }
+
+body {
+    background-color: var(--primary-color);
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+  }
 
 a {
     text-decoration: none;
@@ -58,6 +63,8 @@ a:visited {
         font-size: 100%;
     }   
 }
+
+
 
 /* NAVBAR */
 .navbar {
@@ -115,7 +122,6 @@ a:visited {
 
 #face {
     transition: transform 300ms;
-    flex: 1 auto;
     max-width: 40%;
 }
 
@@ -129,7 +135,7 @@ a:visited {
 .footerbar {
     margin-top: 7%;
     padding: 5%;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .footer-grid {
