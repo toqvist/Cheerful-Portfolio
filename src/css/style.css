@@ -44,10 +44,11 @@ a:visited {
     color: black;
 }
 
+
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    /* padding: 0px 1.5em 0px; */
     background-color: var(--primary-color);
     
     position: relative;
@@ -58,6 +59,11 @@ a:visited {
 .navbar-link {
     padding: 0em 0.5em;
     margin: 1em;
+}
+
+.logo {
+    font-size: 120%;
+    margin: 5% auto;
 }
 
 .navbar-link:hover, .logo:hover {
@@ -72,11 +78,13 @@ a:visited {
     justify-content: start;
     align-items: center;
 }
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .right {
     display: flex;
     justify-content: end;
@@ -97,18 +105,25 @@ a:visited {
 }
 
 .hero {
+    padding: 3%;
+    
     background-color: var(--primary-color);
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 1.8;
 }
 
-.fa-arrow-down {
+.fa-arrow-down§ {
     font-size: 150%;
     transform:scale(1.5) ;
 }
 
 .main-wrapper {
     display: grid;
-    grid-template-columns: 1fr min(105ch, 100%) 1fr;
+    grid-template-columns: 1fr min(1100px, 100%) 1fr;
+    
 }
 
 .main-wrapper > * {
@@ -116,29 +131,40 @@ a:visited {
   }
 
 .page-content {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap; */
 
     border-radius: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
+
+    padding-top: 5%;
+    
 }
 
-
-
-.projects {
+/* .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
-    padding: 1 auto;
+    
+    gap: 3%;
+    margin-top: 3%;
+} */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    /* margin-top: 3%; */
+    justify-content: space-around;
 }
+
 
 .projects-wrapper {
    
 }
 
 @media screen and (max-width: 1000px) {
-    
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }   
@@ -146,10 +172,12 @@ a:visited {
 
 
 @media screen and (max-width: 650px) {
-    
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }   
+    .face-button {
+        opacity: 0%;
+    }
 }
 
 .card {
@@ -159,6 +187,7 @@ a:visited {
 
 .project-card {
     
+    margin: 4%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     display: flex;
@@ -166,9 +195,7 @@ a:visited {
     align-items: center;
     justify-content: center;
 
-    /* padding: 10px; */
     border-radius: 5%;
-    border-style: transparent;
     max-width: 300px;
 
     transition: transform 50ms;
@@ -183,19 +210,21 @@ a:visited {
 .card-title {
     margin: 5%;
     font-size: 180%;
-    
 }
 
 .projects-header {
     text-align: center;
     margin-bottom: 20px;
     font-size: 180%;
-    background-color: white;
 }
 
-
 .footerbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+hr.divider {
+    border-top: 3px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    margin: 0% 3%;
 }
