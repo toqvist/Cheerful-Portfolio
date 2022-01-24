@@ -32,19 +32,14 @@ body {
     flex-direction: column;
 }
 
- .navbar  {    
-    font-family: "Happy monkey", sans-serif;
-    font-size: 140%;
-}
-
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
     color: black;
 }
-
 
 @media screen and (max-width: 1000px) {
     .projects {
@@ -66,18 +61,41 @@ a:visited {
 
 /* NAVBAR */
 .navbar {
+    font-family: "Happy monkey", sans-serif;
+    font-size: 140%;
+
     background-color: var(--primary-color);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    min-height: 110px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 .navbar .container {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
     max-width: 1500px;
-    margin: 0 auto;
+}
 
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    justify-content: start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: end;
+    flex-wrap: wrap;
 }
 
 .navbar-link {
@@ -87,7 +105,7 @@ a:visited {
 
 .logo {
     font-size: 140%;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .flex-child:hover {
@@ -95,32 +113,8 @@ a:visited {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   
 }
 
-.flex-child {
-    text-align: center;
-}
-
-.left {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 #face {
     transition: transform 300ms;
-    transition-timing-function: ease-out;
     flex: 1 auto;
     max-width: 40%;
 }
@@ -136,13 +130,12 @@ a:visited {
     margin-top: 7%;
     padding: 5%;
     flex-shrink: 0;
-
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    padding: 1em;    
+    padding: 1em;
 }
 
 .hero {
