@@ -1,8 +1,23 @@
 {% extends "base.njk" %}
 
+{% block headercontent%}
+    <header class="about-header">
+        <h1>This is me</h1>
+        <h6>(allegedly)</h6>
+        <div class="about-card">
+            <img width = "180px" src="{{ img }}" alt="">
+        </div>
+    </header>
+{% endblock %}
+
+
 {% block pagecontent %}
-    <img src="{{ img }}" alt="">
-    {{ content | safe }}
+
+    <section class="about">
+
+            {{ content | safe }}
+
+    </section>
 
 
 {% endblock %}

@@ -117,7 +117,7 @@ a:visited {
     font-size: 120%;
 }
 
-.fa-arrow-down§ {
+.fa-arrow-down {
     font-size: 150%;
     transform:scale(1.5) ;
 }
@@ -133,9 +133,7 @@ a:visited {
   }
 
 .page-content {
-    /* display: flex;
-    flex-direction: column; 
-    flex-wrap: nowrap; */
+
 
     border-radius: 10px;
     background-color: white;
@@ -146,19 +144,11 @@ a:visited {
     margin-bottom: 5%;
 }
 
-/* .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    gap: 3%;
-    margin-top: 3%;
-} */
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     padding: 3%;
-    /* margin-top: 3%; */
     justify-content: space-around;
 }
 
@@ -274,4 +264,37 @@ h1 > strong::after {
     height: 0.95rem;
     left: -0.25rem;
     right: -0.25rem;
+}
+
+.about-header {
+    padding: 3%;
+    padding-bottom: 0%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 1.1;
+    font-size: 120%;
+}
+
+.about-card  {
+    margin-top: 3%;
+    padding: 1% 5%;
+    min-width: 180px;
+
+    border-radius: 8px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: -1.5%;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
