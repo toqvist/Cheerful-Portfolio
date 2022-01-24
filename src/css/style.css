@@ -8,6 +8,7 @@
     font-style: none;
 }
 
+
 :root {
     --bee: #FFD55A;
     --leaf: #a3c560;
@@ -24,16 +25,23 @@
     --dark-secondary-color: var(--ocean);
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
+
 
 .title, .subtitle, .navbar  {    
     font-family: "Happy monkey", sans-serif;
     font-size: 140%;
 }
 
-p ,h1, h2, h3, h4, h5, h6{
+p ,h1, h2, h3, h4, h5, h6, .footerbar{
     font-family: 'Proza Libre', sans-serif;
 }
 
@@ -129,7 +137,7 @@ a:visited {
 .main-wrapper {
     display: grid;
     grid-template-columns: 1fr min(1100px, 100%) 1fr;
-    
+    flex: 1 0 auto;
 }
 
 .main-wrapper > * {
@@ -216,9 +224,11 @@ a:visited {
 }
 
 .footerbar {
-    /* background-color: var(--mustard); */
+
     margin-top: 7%;
     padding: 5%;
+    flex-shrink: 0;
+
 }
 
 .footer-grid {
