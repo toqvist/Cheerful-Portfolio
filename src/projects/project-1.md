@@ -1,6 +1,6 @@
 ---
 layout: "project.njk"
-title: "Project 1"
+title: "Placeholder"
 img: "https://place-puppy.com/300x200"
 banner: "https://place-puppy.com/500x200"
 face: "true"
