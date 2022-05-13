@@ -1,8 +1,8 @@
 ---
 layout: "project.njk"
 title: "Placeholder"
-img: "/img/300x200.png"
-banner: "/img/500x200.png"
+img: "https://toqvist.github.io/Cheerful-Portfolio/img/300x200.png"
+banner: "https://toqvist.github.io/Cheerful-Portfolio/img/500x200.png"
 face: "true"
 ---
 Quis laborum illum qui consectetur, sint dicta. Aspernatur doloribus adipisci, dolores assumenda maiores corrupti, ducimus est molestias voluptatem mollitia ea voluptatibus nostrum voluptate quas veniam eligendi a iste?
