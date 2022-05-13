@@ -1,7 +1,3 @@
-/* Certain style rules are not strictly speaking needed for the current design, 
-but are included to make sure that the elements fit with future rules.
-I will mark these rules with "Future proofing" directly above, for the purpose of examination */
-
 * {
     padding: 0px;
     margin: 0px;
